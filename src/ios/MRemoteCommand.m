@@ -24,16 +24,16 @@
 	[commandCenter.seekBackwardCommand addTarget:self action:@selector(onSeekBackward:)];
 }
 
-- (void)onPause:(MPRemoteCommandHandlerStatus*)event { [self sendEvent:@"pause"]; }
-- (void)onPlay:(MPRemoteCommandHandlerStatus*)event { [self sendEvent:@"play"]; }
-- (void)onStop:(MPRemoteCommandHandlerStatus*)event { [self sendEvent:@"stop"]; }
-- (void)onTogglePlayPause:(MPRemoteCommandHandlerStatus*)event { [self sendEvent:@"togglePlayPause"]; }
-- (void)onEnableLanguageOption:(MPRemoteCommandHandlerStatus*)event { [self sendEvent:@"enableLanguageOption"]; }
-- (void)onDisableLanguageOption:(MPRemoteCommandHandlerStatus*)event { [self sendEvent:@"disableLanguageOption"]; }
-- (void)onNextTrack:(MPRemoteCommandHandlerStatus*)event { [self sendEvent:@"nextTrack"]; }
-- (void)onPreviousTrack:(MPRemoteCommandHandlerStatus*)event { [self sendEvent:@"previousTrack"]; }
-- (void)onSeekForward:(MPRemoteCommandHandlerStatus*)event { [self sendEvent:@"seekForward"]; }
-- (void)onSeekBackward:(MPRemoteCommandHandlerStatus*)event { [self sendEvent:@"seekBackward"]; }
+- (MPRemoteCommandHandlerStatus)onPause:(MPRemoteCommandEvent*)event { [self sendEvent:@"pause"]; return MPRemoteCommandHandlerStatusSuccess;}
+- (MPRemoteCommandHandlerStatus)onPlay:(MPRemoteCommandEvent*)event { [self sendEvent:@"play"]; return MPRemoteCommandHandlerStatusSuccess;}
+- (MPRemoteCommandHandlerStatus)onStop:(MPRemoteCommandEvent*)event { [self sendEvent:@"stop"]; return MPRemoteCommandHandlerStatusSuccess;}
+- (MPRemoteCommandHandlerStatus)onTogglePlayPause:(MPRemoteCommandEvent*)event { [self sendEvent:@"togglePlayPause"]; return MPRemoteCommandHandlerStatusSuccess;}
+- (MPRemoteCommandHandlerStatus)onEnableLanguageOption:(MPRemoteCommandEvent*)event { [self sendEvent:@"enableLanguageOption"]; return MPRemoteCommandHandlerStatusSuccess;}
+- (MPRemoteCommandHandlerStatus)onDisableLanguageOption:(MPRemoteCommandEvent*)event { [self sendEvent:@"disableLanguageOption"]; return MPRemoteCommandHandlerStatusSuccess;}
+- (MPRemoteCommandHandlerStatus)onNextTrack:(MPRemoteCommandEvent*)event { [self sendEvent:@"nextTrack"]; return MPRemoteCommandHandlerStatusSuccess;}
+- (MPRemoteCommandHandlerStatus)onPreviousTrack:(MPRemoteCommandEvent*)event { [self sendEvent:@"previousTrack"]; return MPRemoteCommandHandlerStatusSuccess;}
+- (MPRemoteCommandHandlerStatus)onSeekForward:(MPRemoteCommandEvent*)event { [self sendEvent:@"seekForward"]; return MPRemoteCommandHandlerStatusSuccess;}
+- (MPRemoteCommandHandlerStatus)onSeekBackward:(MPRemoteCommandEvent*)event { [self sendEvent:@"seekBackward"]; return MPRemoteCommandHandlerStatusSuccess;}
 
 
 /**
