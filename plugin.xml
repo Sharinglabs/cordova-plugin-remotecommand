@@ -8,9 +8,9 @@
     <name>RemoteCommand</name>
     <description>Cordova RemoteCommand Plugin</description>
     <license>MIT</license>
-    <keywords>cordova,media,lockscreen,commandcenter,command,MPRemoteComman</keywords>
-    <repo>https://github.com/Muntligt/cordova-plugin-nowplaying.git</repo>
-    <issue>https://github.com/Muntligt/cordova-plugin-nowplaying/issues</issue>
+    <keywords>cordova,media,lockscreen,commandcenter,command,MPRemoteCommand</keywords>
+    <repo>https://github.com/Sharinglabs/cordova-plugin-remotecommand.git</repo>
+    <issue>https://github.com/Sharinglabs/cordova-plugin-remotecommand/issues</issue>
 
     <engines>
         <engine name="cordova" version=">=3.4.0"/>
